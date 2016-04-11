@@ -125,6 +125,7 @@ header h1 {
     flex-direction: column;
     justify-content: space-around;
 }
+
 #projects .project a:hover {
     -moz-box-shadow: 0 0 10px #ccc;
     -webkit-box-shadow: 0 0 10px #ccc;
@@ -138,21 +139,29 @@ header h1 {
     text-align: center;
     text-shadow: 0 1px 3px rgba(0, 0, 0, 1);
 }
+
 #projects .project a:hover > .desc {
-      text-shadow: none;  
+    text-shadow: none;
 }
 
 .project.p1 a {
-    background: url('/images/p1.jpg') center center / cover no-repeat ;
+    background: url('/images/p1.jpg') center center / cover no-repeat;
+    -webkit-transition: all 2s ease-out;
+    -moz-transition: all 2s ease-out;
+    -o-transition: all 2s ease-out;
+    transition: all 2s ease-out;
 }
+
 .project.p2 a {
-    background: url('/images/p2.jpg') center center / cover no-repeat ;
+    background: url('/images/p2.jpg') center center / cover no-repeat;
 }
+
 .project.p3 a {
-    background: url('/images/p3.jpg') center center / cover no-repeat ;
+    background: url('/images/p3.jpg') center center / cover no-repeat;
 }
+
 .project.p4 a {
-    background: url('/images/p4.jpg') center center / cover no-repeat ;
+    background: url('/images/p4.jpg') center center / cover no-repeat;
 }
 
 
