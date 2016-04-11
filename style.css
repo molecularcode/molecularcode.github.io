@@ -19,7 +19,7 @@ a:hover {
 header {
     overflow: hidden;
     text-align: center;
-    background: url("/images/montreal-landscape.jpg") no-repeat center center fixed;
+    background: url("/images/montreal-landscape-bw.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -32,15 +32,18 @@ section,
 footer {
     padding: 15px;
 }
-
-header h1 {
-    margin: 0px;
-    color: #1BA39C;
-}
-
 .logo {
     border-radius: 50%;
-    margin-right: 15px;
+    margin: 40vh auto 0;
+    display: block;
+}
+header h1 {
+    color: #fff;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    text-transform: uppercase;
+    padding: 15px;
+    display: inline-block;
 }
 
 .intro {
