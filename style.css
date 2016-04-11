@@ -1,32 +1,72 @@
 * {
     box-sizing: border-box;
 }
-body, html {
+
+body,
+html {
     margin: 0;
     padding: 0;
+}
+
+a {
+    color: #4ECDC4;
+}
+
+a:hover {
+    color: #1BBC9B;
 }
 
 header {
     overflow: hidden;
     text-align: center;
+    background: url("/images/montreal-landscape.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
-header, section, footer {
+
+header,
+section,
+footer {
     padding: 15px;
 }
-        
+
 header h1 {
     margin: 0px;
-}    
-        
+    color: #fff;
+}
+
 .logo {
     border-radius: 50%;
     margin-right: 15px;
 }
-        
+
 .intro {
     padding: 15px;
 }
-        
+
 footer {
-    background-color: #999;
+    background-color: #1BA39C;
+    color: #A2DED0;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+.social {
+    font-size: 1.5em;
+}
+.social a {
+    background-color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 4px;
+    width: 40px;
+}
+.copyright {
+    margin-top: 15px;
 }
