@@ -1,0 +1,22 @@
+header {
+    overflow: hidden;
+    text-align: center;
+    padding: 15px 0px;
+}
+        
+header h1 {
+    margin: 0px;
+}    
+        
+.logo {
+    border-radius: 50%;
+    margin-right: 15px;
+}
+        
+.intro {
+    padding: 15px;
+}
+        
+footer {
+    background-color: #999;
+}
