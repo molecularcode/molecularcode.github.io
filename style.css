@@ -1,7 +1,17 @@
+* {
+    box-sizing: border-box;
+}
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
 header {
     overflow: hidden;
     text-align: center;
-    padding: 15px 0px;
+}
+header, section, footer {
+    padding: 15px;
 }
         
 header h1 {
