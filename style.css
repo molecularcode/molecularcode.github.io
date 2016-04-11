@@ -7,14 +7,17 @@ body,
 html {
     margin: 0;
     padding: 0;
+    color: #333;
 }
 
 a {
     color: #4ECDC4;
+    text-decoration: none;
 }
 
-a:hover {
+a:hover, .more a:hover {
     color: #1BBC9B;
+    border-color:#1BBC9B ;
 }
 
 /* Header Styles -------------------------------------------------- */
@@ -76,6 +79,7 @@ header h1 {
 .intro {
     padding: 15px;
     text-align: center;
+    font-size: 2em;
 }
 
 /* Project Styles ------------------------------------------------- */
@@ -124,6 +128,9 @@ footer {
     line-height: 40px;
     margin: 0 4px;
     width: 40px;
+}
+.social a:hover {
+    background-color: #C8F7C5;
 }
 
 .copyright {
