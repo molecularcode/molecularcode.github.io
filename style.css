@@ -112,6 +112,10 @@ header h1 {
     flex: 1 1 30%;
     margin: 15px;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .project a {
@@ -126,32 +130,40 @@ header h1 {
     justify-content: space-around;
 }
 
-#projects .project a:hover {
-    -moz-box-shadow: 0 0 10px #ccc;
-    -webkit-box-shadow: 0 0 10px #ccc;
-    box-shadow: 0 0 10px #ccc;
-    background-image: none;
-}
-
-.project a .desc {
-    color: #fff;
+.project .desc {
     font-size: 1.8em;
     text-align: center;
     text-shadow: 0 1px 3px rgba(0, 0, 0, 1);
+    z-index: 9999;
+    color: #fff;
+}
+.project a .desc {
+    color: #fff;
+    -webkit-transition: all 1s ease-out;
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    transition: all 1s ease-out;
 }
 
 #projects .project a:hover > .desc {
-    text-shadow: none;
+    opacity: 0;
 }
 
+.project.p1 a, .project.p2 a, .project.p3 a, .project.p4 a {
+    -webkit-transition: all 1s ease-out;
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+}
+.project.p1 a.bkgrd:hover, .project.p2 a.bkgrd:hover, .project.p3 a.bkgrd:hover, .project.p4 a.bkgrd:hover {
+    -moz-box-shadow: 0 0 10px #ccc;
+    -webkit-box-shadow: 0 0 10px #ccc;
+    box-shadow: 0 0 10px #ccc;
+    opacity: 0;
+}
 .project.p1 a {
     background: url('/images/p1.jpg') center center / cover no-repeat;
-    -webkit-transition: all 2s ease-out;
-    -moz-transition: all 2s ease-out;
-    -o-transition: all 2s ease-out;
-    transition: all 2s ease-out;
 }
-
 .project.p2 a {
     background: url('/images/p2.jpg') center center / cover no-repeat;
 }
