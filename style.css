@@ -1,4 +1,5 @@
 /* Global Styles -------------------------------------------------- */
+
 * {
     box-sizing: border-box;
 }
@@ -10,20 +11,25 @@ html {
     color: #333;
     font-family: 'Roboto', sans-serif;
 }
+
 h1 {
     font-size: 2.5em;
 }
+
 a {
     color: #4ECDC4;
     text-decoration: none;
 }
 
-a:hover, .more a:hover {
+a:hover,
+.more a:hover {
     color: #1BBC9B;
-    border-color:#1BBC9B ;
+    border-color: #1BBC9B;
 }
 
+
 /* Header Styles -------------------------------------------------- */
+
 header {
     overflow: hidden;
     text-align: center;
@@ -58,6 +64,7 @@ header h1 {
     font-weight: 300;
     background-color: rgba(0, 0, 0, 0.5);
 }
+
 .more {
     display: block;
     position: absolute;
@@ -78,15 +85,19 @@ header h1 {
     width: 50px;
 }
 
+
 /* Intro Styles --------------------------------------------------- */
+
 .intro {
-    padding: 15px;
+    padding: 15px 30px;
     text-align: center;
     font-size: 2em;
 }
 
+
 /* Project Styles ------------------------------------------------- */
-.projects {
+
+#projects {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -94,19 +105,65 @@ header h1 {
     align-items: flex-start;
     align-content: center;
 }
+
 .project {
-    background-color: #4ECDC4;
+    background-color: #1ba39c;
     height: 200px;
     flex: 1 1 30%;
     margin: 15px;
+    position: relative;
 }
 
+.project a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#projects .project a:hover {
+    -moz-box-shadow: 0 0 10px #ccc;
+    -webkit-box-shadow: 0 0 10px #ccc;
+    box-shadow: 0 0 10px #ccc;
+    background-image: none;
+}
+
+.project a .desc {
+    color: #fff;
+    font-size: 1.8em;
+    text-align: center;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 1);
+}
+#projects .project a:hover > .desc {
+      text-shadow: none;  
+}
+
+.project.p1 a {
+    background: url('/images/p1.jpg') center center / cover no-repeat ;
+}
+.project.p2 a {
+    background: url('/images/p2.jpg') center center / cover no-repeat ;
+}
+.project.p3 a {
+    background: url('/images/p3.jpg') center center / cover no-repeat ;
+}
+.project.p4 a {
+    background: url('/images/p4.jpg') center center / cover no-repeat ;
+}
+
+
 /* Footer Styles -------------------------------------------------- */
+
 section.skyline {
     padding: 0px;
     width: 100%;
     margin: 45px auto -4px;
 }
+
 .skyline img {
     width: 100%;
 }
@@ -132,6 +189,7 @@ footer {
     margin: 0 4px;
     width: 40px;
 }
+
 .social a:hover {
     background-color: #C8F7C5;
 }
