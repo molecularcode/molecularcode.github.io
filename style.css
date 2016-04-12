@@ -137,7 +137,7 @@ header h1 {
     z-index: 9999;
     color: #fff;
 }
-.project a .desc {
+.project a {
     color: #fff;
     -webkit-transition: all 1s ease-out;
     -moz-transition: all 1s ease-out;
@@ -145,34 +145,21 @@ header h1 {
     transition: all 1s ease-out;
 }
 
-#projects .project a:hover > .desc {
-    opacity: 0;
+.project.p1 a:hover, .project.p2 a:hover, .project.p3 a:hover, .project.p4 a:hover {
+    background-color: #1ba39c;
 }
-
-.project.p1 a, .project.p2 a, .project.p3 a, .project.p4 a {
-    -webkit-transition: all 1s ease-out;
-    -moz-transition: all 1s ease-out;
-    -o-transition: all 1s ease-out;
-    transition: all 1s ease-out;
-}
-.project.p1 a.bkgrd:hover, .project.p2 a.bkgrd:hover, .project.p3 a.bkgrd:hover, .project.p4 a.bkgrd:hover {
-    -moz-box-shadow: 0 0 10px #ccc;
-    -webkit-box-shadow: 0 0 10px #ccc;
-    box-shadow: 0 0 10px #ccc;
-    opacity: 0;
-}
-.project.p1 a {
+.project.p1 {
     background: url('/images/p1.jpg') center center / cover no-repeat;
 }
-.project.p2 a {
+.project.p2 {
     background: url('/images/p2.jpg') center center / cover no-repeat;
 }
 
-.project.p3 a {
+.project.p3 {
     background: url('/images/p3.jpg') center center / cover no-repeat;
 }
 
-.project.p4 a {
+.project.p4 {
     background: url('/images/p4.jpg') center center / cover no-repeat;
 }
 
